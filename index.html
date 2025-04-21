@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="todo-container">
+            <h2>Daily Tasks</h2>
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addTask">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+            <div class="timer">
+                <div class="time-display">25:00</div>
+                <div class="controls">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="modes">
+                <button class="mode-btn active" data-time="25">Work Mode</button>
+                <button class="mode-btn" data-time="5">Short Break</button>
+                <button class="mode-btn" data-time="15">Long Break</button>
+            </div>
+        </div>
+        <div class="quote-container">
+            <h2>Daily Inspiration</h2>
+            <div class="quote-content">
+                <p class="quote-text"></p>
+                <p class="quote-author">- Peter Thiel</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
